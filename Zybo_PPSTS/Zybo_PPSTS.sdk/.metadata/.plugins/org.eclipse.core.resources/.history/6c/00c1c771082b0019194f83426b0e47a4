@@ -1,0 +1,62 @@
+/* FreeRTOS includes. */
+#include "FreeRTOS.h"
+#include "task.h"
+#include "queue.h"
+#include "timers.h"
+/* Xilinx includes. */
+#include <stdio.h>
+#include "xil_printf.h"
+#include "xparameters.h"
+#include "xstatus.h"
+#include "xuartlite_l.h"
+#include "xgpio.h"
+
+#define TIMER_ID	1
+#define DELAY_10_SECONDS	10000UL
+#define DELAY_1_SECOND		1000UL
+#define TIMER_CHECK_THRESHOLD	9
+
+static void P1Task( void *pvParameters );
+static void P2Task( void *pvParameters );
+
+
+static TaskHandle_t Print1H;
+static TaskHandle_t Print2H;
+
+
+int main( void ){
+	xTaskCreate(P1Task,
+				(const char *) "Print1",
+				configMINIMAL_STACK_SIZE,
+				NULL,
+				tskIDLE_PRIORITY+1,
+				&Print1H );
+
+	xTaskCreate(P2Task,
+				(const char *) "Print2",
+				configMINIMAL_STACK_SIZE,
+				NULL,
+				tskIDLE_PRIORITY + 1,
+				&Print2H );
+
+	vTaskStartScheduler();
+	for( ;; );
+}
+
+/*-----------------------------------------------------------*/
+static void P1Task( void *pvParameters ){
+	const TickType_t x1second = pdMS_TO_TICKS(DELAY_1_SECOND);
+	for(;;){
+		xil_printf("Tarea 1\r\n");
+		vTaskDelay( x1second );
+	}
+}
+/*-----------------------------------------------------------*/
+static void P2Task( void *pvParameters ){
+	const TickType_t x1second = pdMS_TO_TICKS(DELAY_1_SECOND);
+	for(;;){
+		print("Tarea 2\r\n");
+		vTaskDelay( x1second );
+	}
+}
+/*-----------------------------------------------------------*/

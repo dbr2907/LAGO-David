@@ -1,0 +1,6 @@
+vhdl xil_defaultlib  \
+"../../../bd/PDesign/ip/PDesign_axi_uartlite_0_0/sim/PDesign_axi_uartlite_0_0.vhd" \
+"../../../bd/PDesign/ip/PDesign_rst_ps7_0_100M_0/sim/PDesign_rst_ps7_0_100M_0.vhd" \
+"../../../bd/PDesign/ip/PDesign_axi_gpio_0_0/sim/PDesign_axi_gpio_0_0.vhd" \
+
+nosort

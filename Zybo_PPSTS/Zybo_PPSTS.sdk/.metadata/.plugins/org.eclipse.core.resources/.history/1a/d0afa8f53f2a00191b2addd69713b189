@@ -1,0 +1,72 @@
+/* ------------------------------------------------
+ *   uartns550   9600
+ *   ps7_uart    115200 (configured by bootrom/bsp)
+ */
+//***********************Libraries*************************//
+#include <stdio.h>
+#include "platform.h"
+#include "xil_printf.h"
+#include "xparameters.h"
+#include "xstatus.h"
+#include "xuartlite_l.h"
+#include "xgpio.h"
+//********************Definitions**************************//
+#define UARTLITE_BASEADDR XPAR_UARTLITE_0_BASEADDR
+//*********************Functions***************************//
+void GetTimeStamp(void);
+//*******************Variables/Instances*******************//
+u8 token, junk;
+u8 NMEAType[6],DateRaw[6];
+u8 Time[6],Date[8];
+//**************************MAIN****************************//
+int main(void){
+	XGpio Fix;
+	int Fix_F=0;
+	print("Initializing Peripherals\r\n");
+	XGpio_Initialize(&Fix, XPAR_FIX_DEVICE_ID);
+	print("Waiting for Fix from GPS\r\n");
+	while(Fix_F!=1){
+		Fix_F = XGpio_DiscreteRead(&Fix, 1);
+	}
+	print("Fix Obtanied from GPS\r\n");
+	print("Getting Initial TimeStamp\r\n");
+	while(1){
+		token= XUartLite_RecvByte(UARTLITE_BASEADDR);
+		if(token==36){ //Searching for char $
+			for(int i=0; i<6;i++){NMEAType[i] = XUartLite_RecvByte(UARTLITE_BASEADDR);}
+			if(NMEAType[4]==67){ //if char=A
+				GetTimeStamp();
+			}
+		}
+	}
+}
+
+void GetTimeStamp(void){
+	int j=0;
+	print("Time: ");
+	for(int i=0; i<6;i++){
+			Time[i] = XUartLite_RecvByte(UARTLITE_BASEADDR);
+			xil_printf("%c", Time[i]);
+	}
+
+	print(" Date: ");
+	while(j<8){ //Finding 7 commas, as date is exactly after this.
+			junk = XUartLite_RecvByte(UARTLITE_BASEADDR);
+			if(junk==44){j++;}
+	}
+
+	for(int k=0; k<6;k++){DateRaw[k] = XUartLite_RecvByte(UARTLITE_BASEADDR);}
+	//Arranging date to format.
+	Date[0]=50;
+	Date[1]=48;
+	Date[2]=DateRaw[4];
+	Date[3]=DateRaw[5];
+	Date[4]=DateRaw[2];
+	Date[5]=DateRaw[3];
+	Date[6]=DateRaw[0];
+	Date[7]=DateRaw[1];
+
+	for(int l=0; l<8;l++){xil_printf("%c", Date[l]);}
+	print("\r\n");
+	return;
+}

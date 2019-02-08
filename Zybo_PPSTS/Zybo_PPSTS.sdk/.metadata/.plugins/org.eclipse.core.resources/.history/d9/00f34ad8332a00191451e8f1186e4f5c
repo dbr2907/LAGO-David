@@ -1,0 +1,83 @@
+/*
+ * This application configures UART 16550 to baud rate 9600.
+ * PS7 UART (Zynq) is not initialized by this application, since
+ * bootrom/bsp configures it to baud rate 115200
+ *
+ * ------------------------------------------------
+ * | UART TYPE   BAUD RATE                        |
+ * ------------------------------------------------
+ *   uartns550   9600
+ *   uartlite    Configurable only in HW design
+ *   ps7_uart    115200 (configured by bootrom/bsp)
+ */
+//*********************Librerias*************************//
+#include <stdio.h>
+#include "platform.h"
+#include "xil_printf.h"
+#include "xparameters.h"
+#include "xstatus.h"
+#include "xuartlite_l.h"
+#include "xgpio.h"
+
+
+//*******************Definiciones************************//
+#define UARTLITE_BASEADDR XPAR_UARTLITE_0_BASEADDR
+//*********************Metodos***************************//
+void GetTimeStamp(void);
+//************Variables e Instanciaciones****************//
+u8 comodin;
+u8 desecho;
+u8 Tipo[6];
+u8 Hora[6];
+u8 FechaRaw[6];
+u8 Fecha[8];
+//***********************MAIN****************************//
+int main(void){
+
+	XGpio Fix;
+	int Fix_F=3;
+	XGpio_Initialize(&Fix, XPAR_FIX_DEVICE_ID);
+
+
+	while(1){
+		comodin= XUartLite_RecvByte(UARTLITE_BASEADDR);
+		if(comodin==36){
+			for(int i=0; i<6;i++){Tipo[i] = XUartLite_RecvByte(UARTLITE_BASEADDR);}
+			if(Tipo[4]==67){GetTimeStamp();
+			Fix_F = XGpio_DiscreteRead(&Fix, 1);
+			xil_printf("Flag Status: %x\r\n", Fix_F);
+			}
+		}
+
+	}
+}
+
+void GetTimeStamp(void){
+	int j=0;
+	print("Hora: ");
+	for(int i=0; i<6;i++){
+			Hora[i] = XUartLite_RecvByte(UARTLITE_BASEADDR);
+			xil_printf("%c", Hora[i]);
+	}
+
+	print(" Fecha: ");
+	while(j<8){
+			desecho = XUartLite_RecvByte(UARTLITE_BASEADDR);
+			if(desecho==44){j++;}
+	}
+
+	for(int k=0; k<6;k++){FechaRaw[k] = XUartLite_RecvByte(UARTLITE_BASEADDR);}
+
+	Fecha[0]=50;
+	Fecha[1]=48;
+	Fecha[2]=FechaRaw[4];
+	Fecha[3]=FechaRaw[5];
+	Fecha[4]=FechaRaw[2];
+	Fecha[5]=FechaRaw[3];
+	Fecha[6]=FechaRaw[0];
+	Fecha[7]=FechaRaw[1];
+
+	for(int l=0; l<8;l++){xil_printf("%c", Fecha[l]);}
+	print("\r\n");
+	return;
+}

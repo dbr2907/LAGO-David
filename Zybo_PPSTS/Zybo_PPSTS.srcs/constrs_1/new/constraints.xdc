@@ -1,0 +1,8 @@
+set_property IOSTANDARD LVCMOS33 [get_ports uart_rtl_rxd]
+set_property IOSTANDARD LVCMOS33 [get_ports uart_rtl_txd]
+set_property PACKAGE_PIN W15 [get_ports uart_rtl_rxd]
+set_property PACKAGE_PIN T11 [get_ports uart_rtl_txd]
+set_property PACKAGE_PIN V15 [get_ports PPSIn_0]
+set_property PACKAGE_PIN M14 [get_ports PPSOut_0]
+set_property IOSTANDARD LVCMOS33 [get_ports PPSIn_0]
+set_property IOSTANDARD LVCMOS33 [get_ports PPSOut_0]
