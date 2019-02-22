@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete 4 resources" deleteContents="false" description="Delete 4 resources" element1="/LAGO_wGPS/src/freertos_tcp_perf_server.c" element2="/LAGO_wGPS/src/freertos_tcp_perf_server.h" element3="/LAGO_wGPS/src/iic_phyreset.c" element4="/LAGO_wGPS/src/main.c" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="4" stamp="1550866590251"/>
+</session>

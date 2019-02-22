@@ -1,0 +1,133 @@
+{
+   ExpandedHierarchyInLayout: "",
+   guistr: "# # String gsaved with Nlview 6.8.5  2018-01-30 bk=1.4354 VDI=40 GEI=35 GUI=JA:1.6 non-TLS
+#  -string -flagsOSRD
+preplace port x_to_adc_dclk_rst_fmc -pg 1 -y 1570 -defaultsOSRD
+preplace port x_to_adc_cal_fmc -pg 1 -y 1530 -defaultsOSRD
+preplace port uart_rtl -pg 1 -y 20 -defaultsOSRD
+preplace port DDR -pg 1 -y 880 -defaultsOSRD
+preplace port PPSIn_0 -pg 1 -y 770 -defaultsOSRD
+preplace port RLED_0 -pg 1 -y 1220 -defaultsOSRD
+preplace port CLK_IN1_D_clk_n -pg 1 -y 1330 -defaultsOSRD
+preplace port x_to_adc_caldly_nscs_fmc -pg 1 -y 1550 -defaultsOSRD
+preplace port CLK_IN1_D_clk_p -pg 1 -y 1310 -defaultsOSRD
+preplace port x_to_adc_pd_fmc -pg 1 -y 1690 -defaultsOSRD
+preplace port x_to_adc_outedge_ddr_sdata_fmc -pg 1 -y 1650 -defaultsOSRD
+preplace port x_from_adc_calrun_fmc -pg 1 -y 1640 -defaultsOSRD
+preplace port sys_clock -pg 1 -y 1520 -defaultsOSRD
+preplace port x_to_adc_led_0 -pg 1 -y 1610 -defaultsOSRD
+preplace port x_to_adc_led_1 -pg 1 -y 1630 -defaultsOSRD
+preplace port x_to_adc_fsr_ece_fmc -pg 1 -y 1590 -defaultsOSRD
+preplace port SCK_0 -pg 1 -y 1240 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -y 900 -defaultsOSRD
+preplace port IIC0 -pg 1 -y 920 -defaultsOSRD
+preplace port SDATA_0 -pg 1 -y 1260 -defaultsOSRD
+preplace port x_to_adc_outv_slck_fmc -pg 1 -y 1670 -defaultsOSRD
+preplace portBus from_adc_or_DS_N -pg 1 -y 1580 -defaultsOSRD
+preplace portBus rtc_rst -pg 1 -y 1300 -defaultsOSRD
+preplace portBus data_from_adc_DS_N -pg 1 -y 1540 -defaultsOSRD
+preplace portBus from_adc_or_DS_P -pg 1 -y 1600 -defaultsOSRD
+preplace portBus data_from_adc_DS_P -pg 1 -y 1560 -defaultsOSRD
+preplace portBus SS_0 -pg 1 -y 1280 -defaultsOSRD
+preplace portBus clk_to_adc_DS_N -pg 1 -y 1490 -defaultsOSRD
+preplace portBus clk_to_adc_DS_P -pg 1 -y 1510 -defaultsOSRD
+preplace inst util_ds_buf_1 -pg 1 -lvl 3 -y 1310 -defaultsOSRD
+preplace inst GPS_EN_0 -pg 1 -lvl 2 -y 780 -defaultsOSRD
+preplace inst proc_sys_reset_1 -pg 1 -lvl 6 -y 1390 -defaultsOSRD
+preplace inst ADC_Controller -pg 1 -lvl 5 -y 1570 -defaultsOSRD
+preplace inst Fix -pg 1 -lvl 2 -y 630 -defaultsOSRD
+preplace inst axi_uartlite_0 -pg 1 -lvl 2 -y 420 -defaultsOSRD
+preplace inst comblock_0 -pg 1 -lvl 6 -y 500 -defaultsOSRD
+preplace inst Processing_System -pg 1 -lvl 5 -y 920 -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 1 -y 850 -defaultsOSRD
+preplace inst util_ds_buf_0 -pg 1 -lvl 2 -y 1310 -defaultsOSRD
+preplace inst Comblock_PL -pg 1 -lvl 4 -y 480 -defaultsOSRD
+preplace netloc comblock_0_reg11_o 1 3 4 1070 890 1840J 640 3260J 1020 3990
+preplace netloc ADC_Controller_clk_to_adc_DS_N 1 5 2 NJ 1490 NJ
+preplace netloc processing_system7_0_FIXED_IO 1 5 2 3300J 900 NJ
+preplace netloc sys_clock_1 1 0 1 20
+preplace netloc CLK_IN1_D_clk_p_1 1 0 2 NJ 1310 N
+preplace netloc Comblock_PL_done_0 1 4 2 1700J 480 3430
+preplace netloc ADC_Controller_clk_to_adc_DS_P 1 5 2 NJ 1510 NJ
+preplace netloc Processing_System_FCLK_CLK0 1 5 1 3220
+preplace netloc GPS_EN_0_Fix 1 2 1 770
+preplace netloc Comblock_PL_tsf 1 4 2 1690J 450 3410
+preplace netloc Comblock_PL_addb_0 1 4 2 1710J 510 3480
+preplace netloc CLK_IN1_D_clk_n_1 1 0 2 NJ 1330 N
+preplace netloc Processing_System_FCLK_CLK1 1 1 5 420 500 N 500 1030 50 1610J 180 3140
+preplace netloc Comblock_PL_web_0 1 4 2 1720J 550 3370
+preplace netloc comblock_0_reg8_o 1 3 4 1170 860 1780J 620 3280J 980 3890
+preplace netloc data_from_adc_DS_N_1 1 0 5 NJ 1540 NJ 1540 NJ 1540 NJ 1540 NJ
+preplace netloc comblock_0_reg3_o 1 3 4 1140 850 1770J 580 3370J 950 3950
+preplace netloc Processing_System_M02_AXI 1 3 3 1100 60 NJ 60 3130
+preplace netloc comblock_0_reg4_o 1 3 4 1100 820 1760J 590 3350J 960 3940
+preplace netloc util_ds_buf_0_IBUF_OUT 1 2 1 NJ
+preplace netloc processing_system7_0_DDR 1 5 2 3200J 890 4040J
+preplace netloc IRQ_F2P_1 1 4 1 1700
+preplace netloc DAC_CTRL_0_SCK 1 4 3 1630J 10 NJ 10 4060J
+preplace netloc ADC_Controller_x_to_adc_pd_fmc 1 5 2 NJ 1690 NJ
+preplace netloc ADC_Controller_adc_raw 1 3 3 1200 140 NJ 140 3170
+preplace netloc x_from_adc_calrun_fmc_1 1 0 5 NJ 1640 NJ 1640 NJ 1640 NJ 1640 NJ
+preplace netloc Processing_System_FCLK_RESET0_N 1 5 1 3250
+preplace netloc ADC_Controller_Ctrl_reg_out 1 5 1 3440
+preplace netloc CLK_1 1 3 3 1020 160 NJ 160 3380
+preplace netloc DAC_CTRL_0_SS 1 4 3 1650J 50 3330J 40 4030J
+preplace netloc ADC_Controller_x_to_adc_led_0 1 5 2 NJ 1610 NJ
+preplace netloc ADC_Controller_x_to_adc_outedge_ddr_sdata_fmc 1 5 2 NJ 1650 NJ
+preplace netloc S_AXI_HP0_1 1 4 1 1730
+preplace netloc ADC_Controller_x_to_adc_led_1 1 5 2 NJ 1630 NJ
+preplace netloc ADC_Controller_x_to_adc_caldly_nscs_fmc 1 5 2 NJ 1550 NJ
+preplace netloc comblock_0_reg6_o 1 3 4 1040 880 1790J 600 3320J 970 3930
+preplace netloc Processing_System_IIC_0_0 1 5 2 3190J 920 NJ
+preplace netloc Comblock_PL_tss 1 4 2 1680J 440 3400
+preplace netloc proc_sys_reset_0_peripheral_aresetn 1 3 3 1160 1170 1790 1170 3130
+preplace netloc axi_uartlite_0_UART 1 2 5 770J 70 NJ 70 NJ 70 3210J 20 NJ
+preplace netloc data_from_adc_DS_P_1 1 0 5 NJ 1560 NJ 1560 NJ 1560 NJ 1560 NJ
+preplace netloc DAC_CTRL_0_SDATA 1 4 3 1630J 540 3310J 1050 3970J
+preplace netloc Comblock_PL_FIFO_CLR 1 4 2 1770J 470 3490
+preplace netloc Processing_System_M07_AXI 1 5 1 3390
+preplace netloc ADC_Controller_x_to_adc_fsr_ece_fmc 1 5 2 NJ 1590 NJ
+preplace netloc comblock_0_fifo_aempty_o 1 3 4 1050 80 NJ 80 NJ 80 4020
+preplace netloc DAC_CTRL_0_RLED 1 4 3 1640J 170 3360J 30 4050J
+preplace netloc comblock_0_fifo_full_o 1 3 4 1080 110 NJ 110 NJ 110 3860
+preplace netloc GPS_EN_0_PPSOut 1 2 2 NJ 770 1030
+preplace netloc from_adc_or_DS_P_1 1 0 5 NJ 1600 NJ 1600 NJ 1600 NJ 1600 NJ
+preplace netloc comblock_0_reg13_o 1 3 4 1120 830 1800J 660 3240J 1040 3980
+preplace netloc ADC_Controller_x_to_adc_outv_slck_fmc 1 5 2 NJ 1670 NJ
+preplace netloc comblock_0_reg7_o 1 4 3 1850 610 3290J 990 4000
+preplace netloc comblock_0_ram_data_o 1 3 4 1190 790 1710J 520 3430J 910 3850
+preplace netloc Processing_System_M00_AXI 1 3 3 1090 30 NJ 30 3150
+preplace netloc from_adc_or_DS_N_1 1 0 5 NJ 1580 NJ 1580 NJ 1580 NJ 1580 NJ
+preplace netloc ADC_Controller_x_to_adc_cal_fmc 1 5 2 NJ 1530 NJ
+preplace netloc ADC_Controller_x_to_adc_dclk_rst_fmc 1 5 2 NJ 1570 NJ
+preplace netloc comblock_0_reg1_o 1 3 4 1180 800 1740J 560 3420J 930 3970
+preplace netloc Comblock_PL_FIFO_WE 1 4 2 1720J 500 3460
+preplace netloc Processing_System_M11_AXI 1 1 5 410J 40 NJ 40 NJ 40 NJ 40 3160
+preplace netloc proc_sys_reset_1_peripheral_aresetn 1 3 4 1090 1160 NJ 1160 NJ 1160 3880
+preplace netloc Comblock_PL_dinb_0 1 4 2 NJ 530 3450
+preplace netloc comblock_0_fifo_afull_o 1 3 4 1060 90 NJ 90 NJ 90 3910
+preplace netloc Processing_System_M09_AXI 1 5 1 3210
+preplace netloc Processing_System_M08_AXI 1 5 1 3360
+preplace netloc clk_wiz_0_clk_out1 1 1 1 400
+preplace netloc PPSIn_0_1 1 0 2 NJ 770 NJ
+preplace netloc Processing_System_peripheral_aresetn1 1 1 5 390 10 N 10 N 10 1620 190 3330
+preplace netloc comblock_0_fifo_empty_o 1 3 4 1070 100 NJ 100 NJ 100 3900
+preplace netloc comblock_0_reg2_o 1 3 4 1200 810 1750J 570 3340J 940 3960
+preplace netloc Processing_System_M10_AXI 1 1 5 400J 20 NJ 20 NJ 20 NJ 20 3180
+preplace netloc clk_wiz_0_clk_out2 1 1 4 NJ 860 NJ 860 1010J 910 1620
+preplace netloc comblock_0_reg9_o 1 3 4 1150 900 1830J 630 3270J 1000 3920
+preplace netloc comblock_0_reg12_o 1 3 4 1080 870 1820J 650 3250J 1010 3880
+preplace netloc comblock_0_reg0_o 1 3 4 1110 150 NJ 150 3490J 70 3890
+preplace netloc Comblock_PL_trigger 1 4 2 1660J 430 3340
+preplace netloc comblock_0_reg14_o 1 3 4 1130 840 1810J 670 3230J 1030 3870
+preplace netloc Comblock_PL_FIFO_DATA 1 4 2 1740J 490 3470
+preplace netloc Comblock_PL_curr_cycle_0 1 4 2 1670J 460 3420
+preplace netloc comblock_0_reg5_o 1 3 4 1190 120 NJ 120 3440J 60 3920
+preplace netloc comblock_0_reg10_o 1 3 4 1180 130 NJ 130 3390J 50 4010
+levelinfo -pg 1 0 300 620 890 1430 2910 3680 4090 -top 0 -bot 2120
+",
+}
+{
+   da_axi4_cnt: "2",
+   da_board_cnt: "3",
+}

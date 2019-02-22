@@ -1,0 +1,122 @@
+14:26:03 **** Auto Build of configuration Debug for project LAGO_wGPS ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/AD7303.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/AD7303.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../LAGO_wGPS_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/AD7303.d" -MT"src/AD7303.o" -o "src/AD7303.o" "../src/AD7303.c"
+../src/AD7303.c: In function 'set_DAC_value':
+../src/AD7303.c:15:5: warning: variable 'debug' set but not used [-Wunused-but-set-variable]
+ u32 debug=0;
+     ^~~~~
+'Finished building: ../src/AD7303.c'
+' '
+'Building file: ../src/DMA.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/DMA.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../LAGO_wGPS_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/DMA.d" -MT"src/DMA.o" -o "src/DMA.o" "../src/DMA.c"
+../src/DMA.c: In function 'CheckData':
+../src/DMA.c:125:6: warning: unused variable 'len' [-Wunused-variable]
+  int len = 1024;
+      ^~~
+'Finished building: ../src/DMA.c'
+' '
+'Building file: ../src/DS3231M.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/DS3231M.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../LAGO_wGPS_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/DS3231M.d" -MT"src/DS3231M.o" -o "src/DS3231M.o" "../src/DS3231M.c"
+../src/DS3231M.c: In function 'DS3231M_set_reg':
+../src/DS3231M.c:18:47: warning: passing argument 3 of 'xI2C_Write' from incompatible pointer type [-Wincompatible-pointer-types]
+  int state=xI2C_Write(I2C_DeviceNr, SlaveAdr, &iic_dat, 2);
+                                               ^
+In file included from ../src/DS3231M.c:9:0:
+../src/IIC_RW.h:22:5: note: expected 'unsigned char *' but argument is of type 'u8 (*)[2] {aka unsigned char (*)[2]}'
+ int xI2C_Write (int I2cDevId, int SlaveAdr, unsigned char *p, int len);
+     ^~~~~~~~~~
+'Finished building: ../src/DS3231M.c'
+' '
+'Building file: ../src/GPS_TimeStamp.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GPS_TimeStamp.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../LAGO_wGPS_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GPS_TimeStamp.d" -MT"src/GPS_TimeStamp.o" -o "src/GPS_TimeStamp.o" "../src/GPS_TimeStamp.c"
+'Finished building: ../src/GPS_TimeStamp.c'
+' '
+'Building file: ../src/Histogram.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Histogram.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../LAGO_wGPS_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/Histogram.d" -MT"src/Histogram.o" -o "src/Histogram.o" "../src/Histogram.c"
+'Finished building: ../src/Histogram.c'
+' '
+'Building file: ../src/IIC_RW.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/IIC_RW.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../LAGO_wGPS_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/IIC_RW.d" -MT"src/IIC_RW.o" -o "src/IIC_RW.o" "../src/IIC_RW.c"
+'Finished building: ../src/IIC_RW.c'
+' '
+'Building file: ../src/MAX5216PM.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/MAX5216PM.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../LAGO_wGPS_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/MAX5216PM.d" -MT"src/MAX5216PM.o" -o "src/MAX5216PM.o" "../src/MAX5216PM.c"
+'Finished building: ../src/MAX5216PM.c'
+' '
+'Building file: ../src/TempPress.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/TempPress.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../LAGO_wGPS_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/TempPress.d" -MT"src/TempPress.o" -o "src/TempPress.o" "../src/TempPress.c"
+../src/TempPress.c: In function 'ADT420_read':
+../src/TempPress.c:18:57: warning: passing argument 5 of 'xI2C_WrRd' from incompatible pointer type [-Wincompatible-pointer-types]
+        int state=xI2C_WrRd(I2cDevId, SlaveAdr ,&adr, 1, &data, 2);
+                                                         ^
+In file included from ../src/TempPress.h:11:0,
+                 from ../src/TempPress.c:7:
+../src/IIC_RW.h:21:5: note: expected 'unsigned char *' but argument is of type 'unsigned char (*)[2]'
+ int xI2C_WrRd (int I2cDevId, int SlaveAdr, unsigned char *p, int len, unsigned char *pRd, int lenRd);
+     ^~~~~~~~~
+'Finished building: ../src/TempPress.c'
+' '
+'Building file: ../src/echo.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/echo.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../LAGO_wGPS_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/echo.d" -MT"src/echo.o" -o "src/echo.o" "../src/echo.c"
+../src/echo.c: In function 'process_echo_request':
+../src/echo.c:136:5: warning: unused variable 'depth' [-Wunused-variable]
+  u8 depth=0;
+     ^~~~~
+In file included from ../src/echo.c:37:0:
+../src/echo.c: At top level:
+../src/DMA.h:55:12: warning: 'CheckData' declared 'static' but never defined [-Wunused-function]
+ static int CheckData(void);
+            ^~~~~~~~~
+'Finished building: ../src/echo.c'
+' '
+'Building file: ../src/iic_phyreset.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/iic_phyreset.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../LAGO_wGPS_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/iic_phyreset.d" -MT"src/iic_phyreset.o" -o "src/iic_phyreset.o" "../src/iic_phyreset.c"
+'Finished building: ../src/iic_phyreset.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../LAGO_wGPS_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:196:59: warning: passing argument 5 of 'xI2C_WrRd' from incompatible pointer type [-Wincompatible-pointer-types]
+    state=xI2C_WrRd (I2C_DeviceNr, MS5611_addr, &adr, 1,   &C, 2);
+                                                           ^
+In file included from ../src/main.c:48:0:
+../src/IIC_RW.h:21:5: note: expected 'unsigned char *' but argument is of type 'unsigned char (*)[2]'
+ int xI2C_WrRd (int I2cDevId, int SlaveAdr, unsigned char *p, int len, unsigned char *pRd, int lenRd);
+     ^~~~~~~~~
+../src/main.c:247:3: warning: implicit declaration of function 'dac_init'; did you mean 'udp_init'? [-Wimplicit-function-declaration]
+   dac_init();
+   ^~~~~~~~
+   udp_init
+../src/main.c:186:6: warning: unused variable 'iic_dat' [-Wunused-variable]
+   u8 iic_dat[2];
+      ^~~~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: LAGO_wGPS.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../LAGO_wGPS_bsp/ps7_cortexa9_0/lib -o "LAGO_wGPS.elf"  ./src/AD7303.o ./src/DMA.o ./src/DS3231M.o ./src/GPS_TimeStamp.o ./src/Histogram.o ./src/IIC_RW.o ./src/MAX5216PM.o ./src/TempPress.o ./src/echo.o ./src/iic_phyreset.o ./src/main.o   -lm -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: LAGO_wGPS.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size LAGO_wGPS.elf  |tee "LAGO_wGPS.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 246780	   4324	17946912	18198016	115ae00	LAGO_wGPS.elf
+'Finished building: LAGO_wGPS.elf.size'
+' '
+
+14:26:11 Build Finished (took 7s.408ms)
+

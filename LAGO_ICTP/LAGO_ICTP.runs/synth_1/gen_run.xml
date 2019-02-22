@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7z020clg484-1" LaunchTime="1550864698">
+  <File Type="PA-TCL" Name="design_2_wrapper.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="design_2_wrapper_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="design_2_wrapper_reports.tcl"/>
+  <File Type="RDS-RDS" Name="design_2_wrapper.vds"/>
+  <File Type="RDS-UTIL" Name="design_2_wrapper_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="design_2_wrapper_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="design_2_wrapper.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="design_2_wrapper_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="design_2_wrapper_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/sources/spi_master.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../oscilo_w_timestamp/sources/spi_master.vhd"/>
+        <Attr Name="ImportTime" Val="1542059744"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources/DAC_CTRL1v1.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../oscilo_w_timestamp/sources/DAC_CTRL1v1.vhd"/>
+        <Attr Name="ImportTime" Val="1542059744"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/c_shift_ram_0/c_shift_ram_0.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/timestamp/FIFO_MGR/FIFOMGR.VHD">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../timestamp/FIFO_MGR/FIFOMGR.VHD"/>
+        <Attr Name="ImportTime" Val="1542059708"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/timestamp/mstrigger/array_pkg.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../timestamp/mstrigger/array_pkg.vhd"/>
+        <Attr Name="ImportTime" Val="1542059709"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/timestamp/mstrigger/Trigger.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../timestamp/mstrigger/Trigger.vhd"/>
+        <Attr Name="ImportTime" Val="1542059709"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/timestamp/mstrigger/diff_checker.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../timestamp/mstrigger/diff_checker.vhd"/>
+        <Attr Name="ImportTime" Val="1542059709"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/timestamp/mstrigger/mstrigger.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../timestamp/mstrigger/mstrigger.vhd"/>
+        <Attr Name="ImportTime" Val="1542059709"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/timestamp/Timestamp_Sources/timer.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../timestamp/Timestamp_Sources/timer.vhd"/>
+        <Attr Name="ImportTime" Val="1542059708"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/timestamp/Timestamp_Sources/stamp.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../timestamp/Timestamp_Sources/stamp.vhd"/>
+        <Attr Name="ImportTime" Val="1542059708"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/timestamp/Timestamp_Sources/timestamp.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../timestamp/Timestamp_Sources/timestamp.vhd"/>
+        <Attr Name="ImportTime" Val="1542059708"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources/reg_fmc_adc_ctrl.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../oscilo_w_timestamp/sources/reg_fmc_adc_ctrl.vhd"/>
+        <Attr Name="ImportTime" Val="1542059744"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/GPS_EN.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/design_2/design_2.bd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/design_2/hdl/design_2_wrapper.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="design_2_wrapper"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/constr/Sensors.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../oscilo_w_timestamp/constr/Sensors.xdc"/>
+        <Attr Name="ImportTime" Val="1542059744"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/constrs_1/imports/constr/osc_XDC.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../oscilo_w_timestamp/constr/osc_XDC.xdc"/>
+        <Attr Name="ImportTime" Val="1542059744"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/imports/constr/Sensors.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

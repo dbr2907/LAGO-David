@@ -1,0 +1,61 @@
+vhdl FPGALIB  \
+"../../../bd/design_2/ipshared/6737/src/mems_pkg.vhdl" \
+"../../../bd/design_2/ipshared/6737/src/numeric_pkg.vhdl" \
+"../../../bd/design_2/ipshared/6737/src/sync_pkg.vhdl" \
+"../../../bd/design_2/ipshared/6737/src/FIFO.vhdl" \
+"../../../bd/design_2/ipshared/6737/src/SimpleDualPortRAM.vhdl" \
+"../../../bd/design_2/ipshared/6737/src/TrueDualPortRAM.vhdl" \
+
+vhdl xil_defaultlib  \
+"../../../bd/design_2/ipshared/6737/hdl/comblock_v1_0_AXIL_REGS.vhd" \
+"../../../bd/design_2/ipshared/6737/hdl/comblock_v1_0_AXIF_DRAM.vhd" \
+"../../../bd/design_2/ipshared/6737/hdl/comblock_v1_0_AXIF_FIFO.vhd" \
+
+vhdl FPGALIB  \
+"../../../bd/design_2/ipshared/6737/src/ffchain.vhdl" \
+"../../../bd/design_2/ipshared/6737/src/gray_sync.vhdl" \
+
+vhdl xil_defaultlib  \
+"../../../bd/design_2/ipshared/6737/src/comblock.vhd" \
+"../../../bd/design_2/ipshared/6737/hdl/comblock_v1_0.vhd" \
+"../../../bd/design_2/ip/design_2_comblock_0_0/sim/design_2_comblock_0_0.vhd" \
+"../../../bd/design_2/ip/design_2_proc_sys_reset_1_0/sim/design_2_proc_sys_reset_1_0.vhd" \
+"../../../bd/design_2/ip/design_2_util_ds_buf_0_1/util_ds_buf.vhd" \
+"../../../bd/design_2/ip/design_2_util_ds_buf_0_1/sim/design_2_util_ds_buf_0_1.vhd" \
+"../../../bd/design_2/ip/design_2_util_ds_buf_1_0/sim/design_2_util_ds_buf_1_0.vhd" \
+"../../../bd/design_2/ip/design_2_proc_sys_reset_0_0/sim/design_2_proc_sys_reset_0_0.vhd" \
+"../../../bd/design_2/ipshared/a1e0/Decimate_N.vhd" \
+"../../../bd/design_2/ipshared/a1e0/Decimate_by2.vhd" \
+"../../../bd/design_2/ipshared/a1e0/ADC_Decimator.vhd" \
+"../../../bd/design_2/ip/design_2_ADC_Decimator_0_0/sim/design_2_ADC_Decimator_0_0.vhd" \
+"../../../bd/design_2/ip/design_2_DAC_CTRL1v1_0_0/sim/design_2_DAC_CTRL1v1_0_0.vhd" \
+"../../../bd/design_2/ip/design_2_Hist_Gen_Block_0_0/ipshared/b9df/src/histo_counter.vhd" \
+"../../../bd/design_2/ip/design_2_Hist_Gen_Block_0_0/src/Histo1_histo_counter_0_0/sim/Histo1_histo_counter_0_0.vhd" \
+"../../../bd/design_2/ip/design_2_Hist_Gen_Block_0_0/ipshared/2902/src/Top.vhd" \
+"../../../bd/design_2/ip/design_2_Hist_Gen_Block_0_0/src/Histo1_SBRAM_wen_mgr_0_0/sim/Histo1_SBRAM_wen_mgr_0_0.vhd" \
+"../../../bd/design_2/ipshared/88e5/src/Histo1.vhd" \
+"../../../bd/design_2/ipshared/88e5/src/Histo1_wrapper.vhd" \
+"../../../bd/design_2/ip/design_2_Hist_Gen_Block_0_0/sim/design_2_Hist_Gen_Block_0_0.vhd" \
+"../../../bd/design_2/ip/design_2_FIFOMGR_0_0/sim/design_2_FIFOMGR_0_0.vhd" \
+"../../../bd/design_2/ip/design_2_mstrigger_0_0/sim/design_2_mstrigger_0_0.vhd" \
+"../../../bd/design_2/ip/design_2_timer_0_0/sim/design_2_timer_0_0.vhd" \
+"../../../bd/design_2/ip/design_2_timestamp_1_0/sim/design_2_timestamp_1_0.vhd" \
+"../../../bd/design_2/ipshared/01f9/sources_1/imports/axi_trigger_gen_m3_v1_0/new/Trigger_m4.vhd" \
+"../../../bd/design_2/ipshared/01f9/sources_1/imports/axi_trigger_gen_m3_v1_0/imports/hdl/AXI_Trigger_gen_m4_v1_0_S00_AXI.vhd" \
+"../../../bd/design_2/ipshared/01f9/sources_1/imports/axi_trigger_gen_m3_v1_0/imports/hdl/AXI_Trigger_gen_m4_v1_0.vhd" \
+"../../../bd/design_2/ip/design_2_AXI_Trigger_gen_m4_0_0/sim/design_2_AXI_Trigger_gen_m4_0_0.vhd" \
+"../../../bd/design_2/ip/design_2_axi_dma_0_0/sim/design_2_axi_dma_0_0.vhd" \
+"../../../bd/design_2/ip/design_2_axi_smc_0/bd_0/ip/ip_1/sim/bd_ebcc_psr0_0.vhd" \
+"../../../bd/design_2/ip/design_2_axi_smc_0/bd_0/ip/ip_2/sim/bd_ebcc_psr_aclk_0.vhd" \
+"../../../bd/design_2/ip/design_2_axi_smc_0/bd_0/ip/ip_3/sim/bd_ebcc_psr_aclk1_0.vhd" \
+"../../../bd/design_2/ip/design_2_axi_smc_0/sim/design_2_axi_smc_0.vhd" \
+"../../../bd/design_2/ip/design_2_adc_controller_0_0/sim/design_2_adc_controller_0_0.vhd" \
+"../../../bd/design_2/ip/design_2_util_ds_buf_0_0/sim/design_2_util_ds_buf_0_0.vhd" \
+"../../../bd/design_2/ip/design_2_util_ds_buf_2_0/sim/design_2_util_ds_buf_2_0.vhd" \
+"../../../bd/design_2/ip/design_2_util_ds_buf_3_0/sim/design_2_util_ds_buf_3_0.vhd" \
+"../../../bd/design_2/ip/design_2_axi_uartlite_0_0/sim/design_2_axi_uartlite_0_0.vhd" \
+"../../../bd/design_2/ip/design_2_axi_gpio_0_0/sim/design_2_axi_gpio_0_0.vhd" \
+"../../../bd/design_2/ip/design_2_GPS_EN_0_0/sim/design_2_GPS_EN_0_0.vhd" \
+"../../../bd/design_2/sim/design_2.vhd" \
+
+nosort

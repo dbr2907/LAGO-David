@@ -1,0 +1,68 @@
+{
+   ExpandedHierarchyInLayout: "",
+   guistr: "# # String gsaved with Nlview 6.8.5  2018-01-30 bk=1.4354 VDI=40 GEI=35 GUI=JA:1.6 non-TLS
+#  -string -flagsOSRD
+preplace port FIFO_AEMPTY -pg 1 -y 150 -defaultsOSRD
+preplace port fclk -pg 1 -y 390 -defaultsOSRD
+preplace port FIFO_WE -pg 1 -y 240 -defaultsOSRD
+preplace port FIFO_AFULL -pg 1 -y 280 -defaultsOSRD
+preplace port FIFO_FULL -pg 1 -y 320 -defaultsOSRD
+preplace port rst -pg 1 -y 410 -defaultsOSRD
+preplace port sclk -pg 1 -y 370 -defaultsOSRD
+preplace port FIFO_EMPTY -pg 1 -y 300 -defaultsOSRD
+preplace port FIFO_CLR -pg 1 -y 260 -defaultsOSRD
+preplace portBus In0 -pg 1 -y 50 -defaultsOSRD
+preplace portBus In1 -pg 1 -y 70 -defaultsOSRD
+preplace portBus In2 -pg 1 -y 210 -defaultsOSRD
+preplace portBus In3 -pg 1 -y 230 -defaultsOSRD
+preplace portBus FIFOMGR_CTRL_REG -pg 1 -y 130 -defaultsOSRD
+preplace portBus trigger -pg 1 -y 720 -defaultsOSRD
+preplace portBus FIFO_DATA -pg 1 -y 220 -defaultsOSRD
+preplace portBus din -pg 1 -y 430 -defaultsOSRD
+preplace portBus threshold -pg 1 -y 690 -defaultsOSRD
+preplace portBus tss -pg 1 -y 680 -defaultsOSRD
+preplace portBus tsf -pg 1 -y 700 -defaultsOSRD
+preplace portBus ctrl_reg -pg 1 -y 710 -defaultsOSRD
+preplace inst timer_0 -pg 1 -lvl 2 -y 390 -defaultsOSRD
+preplace inst xlconcat_0 -pg 1 -lvl 1 -y 60 -defaultsOSRD
+preplace inst xlconcat_1 -pg 1 -lvl 1 -y 220 -defaultsOSRD
+preplace inst ctrl_reg1 -pg 1 -lvl 2 -y 750 -defaultsOSRD
+preplace inst mstrigger_0 -pg 1 -lvl 2 -y 570 -defaultsOSRD
+preplace inst ctrl_reg2 -pg 1 -lvl 1 -y 690 -defaultsOSRD
+preplace inst timestamp_1 -pg 1 -lvl 3 -y 700 -defaultsOSRD
+preplace inst ctrl_reg -pg 1 -lvl 1 -y 590 -defaultsOSRD
+preplace inst FIFOMGR_0 -pg 1 -lvl 3 -y 240 -defaultsOSRD
+preplace netloc threshold_1 1 0 1 NJ
+preplace netloc In2_1 1 0 1 NJ
+preplace netloc timestamp_1_trig_signal 1 3 1 NJ
+preplace netloc timer_0_st 1 2 1 520
+preplace netloc FIFO_FULL_1 1 0 3 NJ 320 240J 290 580J
+preplace netloc FIFO_AFULL_1 1 0 3 20J 290 230J 260 600J
+preplace netloc FIFOMGR_CTRL_REG_1 1 0 3 NJ 130 240J 170 NJ
+preplace netloc xlconcat_1_dout 1 1 1 N
+preplace netloc sclk_1 1 0 3 NJ 370 270 310 500J
+preplace netloc timestamp_1_tss 1 3 1 NJ
+preplace netloc timestamp_1_tsf 1 3 1 NJ
+preplace netloc timer_0_ft 1 2 1 570
+preplace netloc In0_1 1 0 1 NJ
+preplace netloc FIFOMGR_0_FIFO_WE 1 3 1 NJ
+preplace netloc mstrigger_0_TS 1 2 1 540
+preplace netloc FIFOMGR_0_FIFO_DATA 1 3 1 NJ
+preplace netloc xlconcat_0_dout 1 1 1 N
+preplace netloc ctrl_reg1_Dout 1 2 1 510J
+preplace netloc In3_1 1 0 1 NJ
+preplace netloc FIFO_AEMPTY_1 1 0 3 NJ 150 230J 240 590J
+preplace netloc mstrigger_0_LAT 1 2 1 550
+preplace netloc din_1 1 0 3 NJ 430 260 270 NJ
+preplace netloc Net 1 0 3 NJ 410 230 470 530
+preplace netloc fclk_1 1 0 3 NJ 390 250 250 560
+preplace netloc ctrl_reg_1 1 0 2 20 750 NJ
+preplace netloc FIFOMGR_0_FIFO_CLR 1 3 1 NJ
+preplace netloc xlslice_0_Dout 1 1 1 NJ
+preplace netloc ctrl_reg2_Dout 1 1 1 250J
+preplace netloc In1_1 1 0 1 NJ
+preplace netloc FIFO_EMPTY_1 1 0 3 NJ 300 NJ 300 510J
+levelinfo -pg 1 0 130 390 760 940 -top -10 -bot 810
+",
+}
+
